@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title></title>
+	<script src="jquery-1.11.3.js"></script>
+	<link rel="stylesheet" href="day.css">
+
+	<style>
+		/*ul li{color: red;}*/
+		li{color: black;}
+
+		ul.emphasis > li {color: red;}
+
+	</style>
+	<script>
+	$(function() {
+		//$('li:first-child').addClass('emphasises');
+	});
+	</script>
+</head>
+<body>
+	<h1>This is my website</h1>
+	<button data-file="day">Day</button>
+	<button data-file="night">Night</button>
+	<ul class="emphasis">
+		<li>Hello</li>
+		<li>Hello 2</li>
+		<li>Hello 3</li>
+		<li>
+			<ul>
+				<li> this is nested list</li>
+			</ul>
+		</li>
+	</ul>
+	
+	<script>
+		//jQuery('ul li').css('color', 'green');
+	//	$('ul li').addClass('emphasis');
+	//$('ul.emphasis').find('li:nth-child').css('color', 'green');
+	//$('ul.emphasis')
+		//.children('li')
+			//.eq(2)
+				//.text('add with jquery');
+				//$('ul').find('li:nth-child').css('font-style','italic');
+				//$('ul').find('li:first-child').css('color','white');
+
+	(function(){
+		$('button').click(function(){
+			var link = $('link');
+			var buttontext = $(this).data('file');
+			link.attr('href', buttontext+'.css');
+			$(this).attr('disabled','disabled');
+			$(this).siblings().removeAttr('disabled');
+
+
+
+			//$(this).text('Changed');
+
+		});
+	})();
+		
+	</script>
+	}
+</body>
+</html>
+

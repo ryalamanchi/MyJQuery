@@ -1,0 +1,19 @@
+body{
+	background: bisque;
+	width: 500px;
+	margin: auto;
+}
+dl{
+	
+}
+dd{
+	
+}
+dt{
+	font-size: 1.5em;
+	margin: auto;
+	font-weight: bold;
+	cursor: pointer;
+	background: aqua;
+	line-height: 2em;
+}

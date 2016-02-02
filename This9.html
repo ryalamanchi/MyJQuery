@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<script src="jquery-1.11.3.js"></script>
+<body>
+<a href="http://www.google.com">Click here</a>
+
+<script type="text/javascript">
+
+	var obj={
+		doIt: function(e){
+			e.preventDefault();
+			console.log(this);
+		}
+	}
+	$('a').on('click',function(e){
+		e.preventDefault();
+		console.log(this);
+		obj.doIt;
+	});
+
+ 	/*function doSomething(e){
+ 		e.preventDefault();
+ 		console.log(this);
+ 	}*/
+	
+	
+</script>
+</body>
+</html>
